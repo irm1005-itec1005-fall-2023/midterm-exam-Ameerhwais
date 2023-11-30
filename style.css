@@ -28,10 +28,73 @@
  *  https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
  */
 
-html {
+ html {
   font-size: 1.0rem;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      background-color: rgb(168, 128, 101);
+      color: #050505b7;
+      }
+/* styles.css */
+.product-card {
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  }
+
+.product-card img {
+  max-height:300px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h1 {
+  color: black;
+  font-size: 24px;
+}
+
+.product-details h2 {
+  font-size: 16px;
+  color: #5a5959;
+  margin-top: -10px;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.product-details h3 {
+  font-size: 24px;
+  color: #140c0a;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #080606;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff6b4b;
 }
